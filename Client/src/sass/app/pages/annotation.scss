@@ -194,8 +194,10 @@
   }
 
   .definition-color {
-      width: 30px !important;
-      height: 28px !important;
+      // width: 30px !important;
+      width: 10% !important;
+      // height: 28px !important;
+      height: 100% !important;
       display: inline-block;
       position: relative;
       border-right: 1px solid #808080;
@@ -211,9 +213,11 @@
       
       &.forbid-any-child {
           border: 3px solid #f00 !important;
-          
+          z-index: 0;
+
           .definition-color {
-              height: 27px !important;
+              // width: 28px !important;
+              // height: 24px !important;
               z-index: -1;
           }
       }

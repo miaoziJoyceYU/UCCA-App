@@ -1,9 +1,16 @@
 <div class="annotation-page-container">
     <div class="col-xs-2 side-bar" keep-on-top ng-class="{'no-events': vm.inRemoteMode()}">
 	    <div class="categories-container">
-        	<div ng-repeat="parentCategory in vm.categories | filter: fromParentLayer  track by vm.categories.indexOf(parentCategory)">
-            	<categories-directive  ng-show="showParents" definition-details="parentCategory" definition-id="vm.categories.indexOf(parentCategory)"></categories-directive>
-	    	</div>
+        	<table width="100%">
+                <col style="width: 5%" />
+                <col />
+                <tr ng-repeat="parentCategory in vm.categories | filter: fromParentLayer  track by vm.categories.indexOf(parentCategory)">
+                    <td/>
+                    <td>
+                        <categories-directive  ng-show="showParents" definition-details="parentCategory" definition-id="vm.categories.indexOf(parentCategory)"></categories-directive>
+                    </td>
+                </tr>
+            </table>
 	    </div>
 	    <div class="categories-container">
 	    	<table width="100%">
