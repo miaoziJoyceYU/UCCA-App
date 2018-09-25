@@ -118,6 +118,7 @@
          */
         function checkRestrictionsOnFinishLocal(annotationUnit) {
             var violation;
+            annotationUnit.finished = false;
 
             if (annotationUnit.tree_id !== '0') {
                 violation = unitViolatesSlotOneRestriction(annotationUnit);
@@ -150,6 +151,7 @@
                 return false;
             }
 
+            annotationUnit.finished = true;
             return true;
         }
 
