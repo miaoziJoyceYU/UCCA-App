@@ -1,6 +1,6 @@
 {
     "HOST":"cs.huji.ac.il",
-    "API_ENDPOINT":"/api/v1",
-    "PROD_URL":"/api/v1"
+    "API_ENDPOINT":"http://ucca.development.cs.huji.ac.il/api/v1",
+    "PROD_URL":"http://ucca.development.cs.huji.ac.il/apt/v1"
 }
     
